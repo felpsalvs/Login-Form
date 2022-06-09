@@ -35,6 +35,10 @@ body {
     &__header {
         padding-left: 119px;
         padding-top: 61px;
+
+        img{
+            margin-right: 10px;
+        }
         h1{
             font-family: 'Poppins';
             font-style: normal;
@@ -42,6 +46,15 @@ body {
             font-size: 24px;
             line-height: 36px;
             color: #D4CCB6;
+            padding-bottom: 5px;
+        }
+        h3{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #AFB6C2;
         }
     }
 }
