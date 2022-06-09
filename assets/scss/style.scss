@@ -1,0 +1,47 @@
+//sass assets/scss:assets/css --watch --style=compressed
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #191816;
+}
+
+.logo {
+    height: 28px;
+    width: 115px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.form {
+    position: absolute;
+    width: 572px;
+    height: 512px;
+    margin-left: 74px;
+    margin-top: 194px;
+    background: #24221F;
+    border-radius: 4px;
+
+    &__header {
+        padding-left: 119px;
+        padding-top: 61px;
+        h1{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #D4CCB6;
+        }
+    }
+}
