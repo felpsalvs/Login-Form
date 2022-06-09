@@ -57,4 +57,33 @@ body {
             color: #AFB6C2;
         }
     }
+
+&__login {
+    display: flex;
+    position: absolute;
+    margin-left: 193px;
+    margin-top: 340px;
+    flex-direction: column;
+
+    &__email{
+        margin-left: 118px;
+        margin-top: 175px;
+        margin-bottom: 20px;
+        border: 1px solid #FFC632;
+        box-shadow: 0px 0px 0px 2px #FFDE88;
+        border-radius: 4px;
+    }
+    input{
+        background: url(/images/mail.svg) no-repeat left / 1.3em;
+        padding-left: 1.3em;
+    }
+    h3{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #AFB6C2;
+    }
+}
 }
