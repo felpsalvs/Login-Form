@@ -69,13 +69,30 @@ body {
         margin-left: 118px;
         margin-top: 175px;
         margin-bottom: 20px;
-        border: 1px solid #FFC632;
-        box-shadow: 0px 0px 0px 2px #FFDE88;
-        border-radius: 4px;
+        
     }
     input{
-        background: url(/images/mail.svg) no-repeat left / 1.3em;
+        background: url(/images/mail.svg) no-repeat left / 20px;
         padding-left: 1.3em;
+        border-radius: 4px;
+        border: 1px solid #AFB6C2;
+        width: 335px;
+        height: 44px;
+    }
+    ::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A9AFB9;
+        padding-left: 5px;
+      }
+    input:focus-within{
+        background: url(/images/mail-focus.svg) no-repeat left / 1.3em;
+        padding-left: 1.3em;
+        border: 1px solid #FFC632;
+        box-shadow: 0px 0px 0px 2px #FFDE88;
     }
     h3{
         font-family: 'Poppins';
