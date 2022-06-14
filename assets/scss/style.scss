@@ -129,3 +129,34 @@ body {
     }
 }
 }
+.check {
+    position: absolute;
+    color: #fff;
+    width: 106px;
+    height: 20px;
+    margin-left: 193px;
+    margin-top: 526px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    display: flex;
+    label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A9AFB9;
+    position: absolute;
+    }
+    a {
+        width: 153px;
+        height: 21px;
+        left: 374px;
+        top: 525px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFC632;
+    }
+}
