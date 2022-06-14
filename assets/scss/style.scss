@@ -103,4 +103,29 @@ body {
         color: #AFB6C2;
     }
 }
+&__senha {
+    display: flex;
+    flex-direction: column;
+    
+    input{
+    background-image: url(/images/lock.svg);
+    background-repeat: no-repeat;
+    }
+    input:focus-within{
+        background: url(/images/lock-focus.svg) no-repeat left / 1.3em;
+        padding-left: 1.3em;
+        border: 1px solid #FFC632;
+        box-shadow: 0px 0px 0px 2px #FFDE88;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-left: 303px;
+        bottom: 12px;
+    }
+}
 }
