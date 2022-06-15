@@ -181,7 +181,7 @@ body {
     padding-top: 566px;
     position: relative;
     float: left;
-
+    
     button{
         background: #FFC632;
         border-radius: 4px;
@@ -189,7 +189,7 @@ body {
         gap: 10px;
         width: 334px;
         height: 51px;
-
+        border: none;
         p {
             font-family: 'Poppins';
             font-style: normal;
@@ -203,8 +203,11 @@ body {
             order: 0;
             flex-grow: 0;
         }
+        
     }
-
+    button:hover {
+        background-color: #86691e;
+    }
     a {
         position: absolute;
         left: 241px;
