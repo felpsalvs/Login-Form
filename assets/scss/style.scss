@@ -12,6 +12,8 @@
 body {
     max-width: 1440px;
     width: 100%;
+    position: relative;
+    height: 900px;
     margin: 0 auto;
     background: #191816;
 }
@@ -21,6 +23,14 @@ body {
     width: 115px;
     margin-left: 40px;
     margin-top: 40px;
+    
+    aside { 
+        width: 720px;
+        height: 900px;
+        margin-left: 720px;
+        top: 0px;
+        position: absolute;
+    }
 }
 
 .form {
@@ -226,9 +236,3 @@ body {
 
 }
 
-aside {
-    width: 720px;
-    height: 900px;
-    margin-left: 720px;
-
-}
