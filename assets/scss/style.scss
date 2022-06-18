@@ -24,12 +24,9 @@ body {
     margin-left: 40px;
     margin-top: 40px;
     
-    aside { 
-        width: 720px;
-        height: 900px;
+    &__car { 
         margin-left: 720px;
-        top: 0px;
-        position: absolute;
+        margin-top: -55px;
     }
 }
 
@@ -235,4 +232,3 @@ body {
     }
 
 }
-
