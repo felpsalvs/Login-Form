@@ -1,0 +1,1 @@
+document.getElementById('menu-area').style.display('0px');
