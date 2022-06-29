@@ -8,18 +8,6 @@
     <title>Login Form</title>
   </head>
   <body>
-    <aside>
-      <div id="menu-opener" onclick="menuToggle()">
-        <img src="/images/favicon.ico" width="36" alt="menu" />
-      </div>
-      <div id="menu-area">
-        <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Contato</li>
-        </ul>
-      </div>
-    </aside>
     <div class="logo">
       <img src="/images/logo.svg" alt="Logo do site" />
       <img
@@ -36,20 +24,21 @@
           <h3>Entre com suas informações de cadastro</h3>
         </div>
       </div>
-      <div class="form__login">
+      <form class="form__login">
         <h3>E-mail</h3>
         <input
           type="email"
+          name="email"
           id="email"
           class="form__email"
           placeholder="Digite seu e-mail"
         />
         <div class="form__senha">
           <h3>Senha</h3>
-          <input type="password" id="password" placeholder="Digite sua senha" />
+          <input type="password" name="senha" id="password" placeholder="Digite sua senha" />
           <img src="/images/eye.svg" alt="" />
         </div>
-      </div>
+      </form>
 
       <div class="check">
         <label for="accept">

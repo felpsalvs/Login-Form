@@ -1,5 +1,5 @@
 //sass assets/scss:assets/css --watch --style=compressed
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
 * {
     margin: 0;
@@ -11,57 +11,23 @@
 
 body {
     max-width: 1440px;
-    width: 100%;
     position: relative;
-    height: 900px;
     margin: 0 auto;
     background: #191816;
-}
-
-aside {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    display: flex;
-}
-
-#menu-opener {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-#menu-area {
-    width: 200px;
-    height: 100vh;
-    background-color: #ccc;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transition: all ease .5s;
-}
-
-#menu-area li {
-    display: block;
-    padding: 10px;
-    color: #000;
-    cursor: pointer;
-}
-
-#menu-area li:hover {
-    background-color: #ddd;
+    min-height: 100vh;
 }
 
 .logo {
     height: 28px;
     width: 115px;
     margin-left: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
     cursor: pointer;
-    &__car { 
+    &__car {
         margin-left: 720px;
+        position: absolute;
+        max-width: 720px;
+        top: 0;
     }
 }
 
@@ -71,105 +37,106 @@ aside {
     height: 512px;
     margin-left: 74px;
     margin-top: 194px;
-    background: #24221F;
+    background: #24221f;
     border-radius: 4px;
-    
+
     &__header {
         padding-left: 119px;
         padding-top: 61px;
 
-        img{
+        img {
             margin-right: 10px;
         }
-        h1{
-            font-family: 'Poppins';
+        h1 {
+            font-family: "Poppins";
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 36px;
-            color: #D4CCB6;
+            color: #d4ccb6;
             padding-bottom: 5px;
         }
-        h3{
-            font-family: 'Roboto';
+        h3 {
+            font-family: "Roboto";
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
-            color: #AFB6C2;
+            color: #afb6c2;
         }
     }
 
-&__login {
-    display: flex;
-    position: absolute;
-    margin-left: 193px;
-    margin-top: 340px;
-    flex-direction: column;
-
-    &__email{
-        margin-left: 118px;
-        margin-top: 175px;
-        margin-bottom: 20px;
-        
-    }
-    input{
-        background: url(/images/mail.svg) no-repeat left / 20px;
-        padding-left: 1.3em;
-        border-radius: 4px;
-        border: 1px solid #AFB6C2;
-        width: 335px;
-        height: 44px;
-    }
-    ::placeholder {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        color: #A9AFB9;
-        padding-left: 5px;
-      }
-    input:focus-within{
-        background: url(/images/mail-focus.svg) no-repeat left / 1.3em;
-        padding-left: 1.3em;
-        border: 1px solid #FFC632;
-        box-shadow: 0px 0px 0px 2px #FFC632;
-    }
-    h3{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #AFB6C2;
-    }
-}
-&__senha {
-    display: flex;
-    flex-direction: column;
-    
-    input{
-    background-image: url(/images/lock.svg);
-    background-repeat: no-repeat;
-    }
-    input:focus-within{
-        background: url(/images/lock-focus.svg) no-repeat left / 1.3em;
-        padding-left: 1.3em;
-        border: 1px solid #FFC632;
-        box-shadow: 0px 0px 0px 2px #FFDE88;
-    }
-    h3 {
-        margin-top: 20px;
-    }
-    img {
+    &__login {
+        display: flex;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        margin-left: 303px;
-        bottom: 12px;
+        margin-left: 193px;
+        margin-top: 340px;
+        flex-direction: column;
+
+        &__email {
+            margin-left: 118px;
+            margin-top: 175px;
+            margin-bottom: 20px;
+        }
+        input {
+            background: url(/images/mail.svg) no-repeat left / 20px;
+            padding-left: 1.3em;
+            border-radius: 4px;
+            border: 1px solid #afb6c2;
+            width: 335px;
+            height: 44px;
+        }
+        ::placeholder {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #a9afb9;
+            padding-left: 5px;
+        }
+        input:focus-within {
+            background: url(/images/mail-focus.svg) no-repeat left / 1.3em;
+            padding-left: 1.3em;
+            border: 1px solid #ffc632;
+            box-shadow: 0px 0px 0px 2px #ffc632;
+        }
+        h3 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #afb6c2;
+        }
     }
+    &__senha {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            background-image: url(/images/lock.svg);
+            background-repeat: no-repeat;
 }
+        input:focus-within {
+            background: url(/images/lock-focus.svg) no-repeat left / 1.3em;
+            padding-left: 1.3em;
+            border: 1px solid #ffc632;
+            box-shadow: 0px 0px 0px 2px #ffde88;
+            cursor: pointer;
+
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        img {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            margin-left: 303px;
+            bottom: 12px;
+        }
+    }
 }
 
 .check {
@@ -180,11 +147,11 @@ aside {
     display: flex;
 
     label {
-        font-family: 'Roboto';
+        font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        color: #A9AFB9;
+        color: #a9afb9;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -198,19 +165,19 @@ aside {
         top: 526px;
         border: 1px solid #868686;
         border-radius: 4px;
-       
     }
 
     a {
         left: 374px;
         top: 525px;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 21px;
-        color: #FFC632;
+        color: #ffc632;
         padding-left: 75px;
+        cursor: pointer;
     }
 }
 
@@ -223,9 +190,9 @@ aside {
     padding-top: 566px;
     position: relative;
     float: left;
-    
-    button{
-        background: #FFC632;
+
+    button {
+        background: #ffc632;
         border-radius: 4px;
         padding: 12px 24px;
         gap: 10px;
@@ -233,7 +200,7 @@ aside {
         height: 51px;
         border: none;
         p {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -245,7 +212,6 @@ aside {
             order: 0;
             flex-grow: 0;
         }
-        
     }
     button:hover {
         background-color: #86691e;
@@ -254,16 +220,15 @@ aside {
         position: absolute;
         left: 241px;
         top: 631px;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-        color: #FFC632;
+        color: #ffc632;
         text-align: center;
     }
     a:hover {
         color: #86691e;
     }
-
 }
