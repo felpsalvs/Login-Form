@@ -22,7 +22,6 @@ body {
     width: 115px;
     margin-left: 40px;
     padding-top: 40px;
-    cursor: pointer;
     &__car {
         margin-left: 720px;
         position: absolute;
@@ -145,7 +144,6 @@ body {
     margin-left: 193px;
     margin-top: 526px;
     display: flex;
-
     label {
         font-family: "Roboto";
         font-style: normal;
@@ -156,6 +154,7 @@ body {
         align-items: center;
         flex-direction: row;
         gap: 0.5em;
+        
     }
 
     input[type="checkbox"] {
@@ -165,6 +164,7 @@ body {
         top: 526px;
         border: 1px solid #868686;
         border-radius: 4px;
+        
     }
 
     a {
@@ -199,6 +199,8 @@ body {
         width: 334px;
         height: 51px;
         border: none;
+        cursor: pointer;
+
         p {
             font-family: "Poppins";
             font-style: normal;
