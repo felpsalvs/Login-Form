@@ -67,10 +67,10 @@ body {
 
     &__login {
         display: flex;
-        position: absolute;
-        margin-left: 193px;
-        margin-top: 340px;
+        left: 193px;
+        top: 340px;
         flex-direction: column;
+        position: relative;
 
         &__email {
             margin-left: 118px;
@@ -92,7 +92,7 @@ body {
             font-size: 14px;
             line-height: 16px;
             color: #a9afb9;
-            padding-left: 5px;
+            padding-left: 12px;
         }
         input:focus-within {
             background: url(/images/mail-focus.svg) no-repeat left / 1.3em;
@@ -116,14 +116,13 @@ body {
         input {
             background-image: url(/images/lock.svg);
             background-repeat: no-repeat;
-}
+        }
         input:focus-within {
             background: url(/images/lock-focus.svg) no-repeat left / 1.3em;
             padding-left: 1.3em;
             border: 1px solid #ffc632;
             box-shadow: 0px 0px 0px 2px #ffde88;
             cursor: pointer;
-
         }
         h3 {
             margin-top: 20px;
@@ -141,9 +140,10 @@ body {
 .check {
     position: absolute;
     color: #fff;
-    margin-left: 193px;
-    margin-top: 526px;
+    left: 193px;
+    top: 546px;
     display: flex;
+
     label {
         font-family: "Roboto";
         font-style: normal;
@@ -153,23 +153,26 @@ body {
         display: flex;
         align-items: center;
         flex-direction: row;
-        gap: 0.5em;
+        gap: 0.3em;
         
     }
-
-    input[type="checkbox"] {
+    input {
+        all: unset;
         width: 20px;
         height: 20px;
-        left: 193px;
-        top: 526px;
         border: 1px solid #868686;
         border-radius: 4px;
-        
+        display: flex;
+        color: transparent;
+        transition: 0.2s;
+        cursor: pointer;
     }
 
+    input:checked {
+        background-image: url(/images/check.svg);
+        background-color: #ffc632;
+    }
     a {
-        left: 374px;
-        top: 525px;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 600;
@@ -178,6 +181,10 @@ body {
         color: #ffc632;
         padding-left: 75px;
         cursor: pointer;
+
+    }
+    a:hover {
+        color: #ffc13298;
     }
 }
 
@@ -186,10 +193,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 193px;
-    padding-top: 566px;
-    position: relative;
+    margin-left: 193px;
+    top: 586px;
     float: left;
+    position: absolute;
 
     button {
         background: #ffc632;
@@ -219,9 +226,8 @@ body {
         background-color: #86691e;
     }
     a {
-        position: absolute;
         left: 241px;
-        top: 631px;
+        margin-top: 14px;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
