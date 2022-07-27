@@ -24,9 +24,11 @@ body {
     padding-top: 40px;
     &__car {
         margin-left: 720px;
-        position: absolute;
         max-width: 720px;
         top: 0;
+        background: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
 
