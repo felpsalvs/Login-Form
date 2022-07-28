@@ -11,28 +11,25 @@
 
 body {
   max-width: 1440px;
+  height: 100vh;
   position: relative;
   margin: 0 auto;
   background: #191816;
-  min-height: 100vh;
 }
 
 .logo {
   height: 28px;
   width: 115px;
   margin-left: 40px;
-  padding-top: 30px;
+  margin-top: 40px;
   position: absolute;
-  &__car {
-    margin-left: 72px;
-    position: relative;
-    width: 720px;
-    height: 900px;
-    left: 720px;
-    top: -10px;
-    border-radius: 4px;
-    box-shadow: 8px 0px 11px 10px rgba(0, 0, 0, 0.5);
-  }
+}
+
+.car {
+  position: relative;
+  width: 720px;
+  height: 900px;
+  left: 720px;
 }
 
 .form {
