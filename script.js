@@ -5,6 +5,8 @@ let validator = {
 
     let inputs = form.querySelectorAll("input");
 
+    validator.clearErrors();
+
     for (let i = 0; i < inputs.length; i++) {
       let input = inputs[i];
       let check = validator.checkInput(input);
@@ -31,7 +33,19 @@ let validator = {
             }
             break;
           case "min":
+            if (input.value.length < rDetails[1]) {
+                return "Mínimo de " + rDetails[1] + " caracteres";
+            }
             break;
+            case "email":
+                if(input.value != ""){
+                    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    if(!regex.test(input.value.toLowerCase())){
+                        return "Email inválido";
+                    }
+                    }
+                break;
+                }
         }
       }
     }
@@ -44,6 +58,17 @@ let validator = {
     errorElement.innerHTML = error;
 
     input.parentElement.insetBefore(errorElement, input.ElementSibling);
+  },
+  clearErrors: () => {
+    let inputs = form.querySelectorAll("input");
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].style = "";
+    }
+
+    let errorsElements = document.querySelectorAll(".error");
+    for (let i = 0; i < errorsElements.length; i++) {
+      errorsElements[i].remove();
+    }
   },
 };
 
