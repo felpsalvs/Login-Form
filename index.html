@@ -19,18 +19,30 @@
         <h3>Entre com suas informações de cadastro</h3>
       </div>
     </div>
-    <form action="" method="post">
-      <label class="form__login">
+    <form action="cadastro.js" method="POST" class="form__login">
+      <label>
+        <h3>Nome Completo</h3>
+
+        <input
+          type="text"
+          name="name"
+          class="form__email"
+          placeholder="Digite seu e-mail"
+          data-rules="required|min=2"
+        />
+      </label>
+      <label>
         <h3>E-mail</h3>
 
         <input
-          type="email"
+          type="text"
           name="email"
           id="email"
           class="form__email"
           placeholder="Digite seu e-mail"
           data-rules="required|min=2"
         />
+      </label>
         <label class="form__senha">
           <h3>Senha</h3>
           <input
@@ -41,7 +53,6 @@
           />
           <img src="/images/eye.svg" alt="ver/ocultar" />
         </label>
-      </label>
     </form>
 
     <form class="check">
@@ -53,7 +64,7 @@
     </form>
 
     <div class="button">
-      <button type="submit"><p>Entrar</p></button>
+      <input value="Cadastrar" type="submit"><p>Cadastrar</p></input>
       <a href="#">Não tem uma conta? <b>Registre-se</b></a>
     </div>
 
