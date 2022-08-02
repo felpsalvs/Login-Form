@@ -12,7 +12,6 @@
 body {
   max-width: 1440px;
   height: 100vh;
-  position: relative;
   margin: 0 auto;
   background: #191816;
 }
@@ -22,11 +21,9 @@ body {
   width: 115px;
   margin-left: 40px;
   margin-top: 40px;
-  position: absolute;
 }
 
 .car {
-  position: relative;
   width: 720px;
   height: 900px;
   left: 720px;
@@ -34,7 +31,6 @@ body {
 }
 
 .form {
-  position: absolute;
   width: 572px;
   height: 512px;
   margin-left: 74px;
@@ -73,7 +69,6 @@ body {
     left: 193px;
     top: 340px;
     flex-direction: column;
-    position: relative;
 
     &__email {
       margin-left: 118px;
@@ -88,6 +83,7 @@ body {
       width: 335px;
       height: 44px;
       color: #fff;
+      outline: none;
     }
     ::placeholder {
       font-family: "Roboto";
@@ -132,7 +128,6 @@ body {
       margin-top: 20px;
     }
     img {
-      position: absolute;
       width: 20px;
       height: 20px;
       margin-left: 303px;
@@ -142,7 +137,6 @@ body {
 }
 
 .check {
-  position: absolute;
   color: #fff;
   left: 193px;
   top: 546px;
@@ -198,7 +192,6 @@ body {
   margin-left: 193px;
   top: 586px;
   float: left;
-  position: absolute;
 
   button {
     background: #ffc632;
