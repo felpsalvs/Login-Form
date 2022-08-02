@@ -193,7 +193,7 @@ body {
   top: 586px;
   float: left;
 
-  button {
+  input {
     background: #ffc632;
     border-radius: 4px;
     padding: 12px 24px;
@@ -217,7 +217,7 @@ body {
       flex-grow: 0;
     }
   }
-  button:hover {
+  input:hover {
     background-color: #86691e;
   }
   a {
